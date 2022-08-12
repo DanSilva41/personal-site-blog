@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Telegram API",
+    "links": {
+      "src": "https://github.com/DanSilva41/api_telegram_JS"
+    },
+    "description": "Chat messages shared in Telegram Bots retrieved through Javascript, Json and HTML."
+  },
+  {
+    "title": "Animated Git Flow",
+    "links": {
+      "src": "https://github.com/DanSilva41/gitflowanimated"
+    },
+    "description": "An experimental attempt at React to visualize and animate the flow of Git Flow. [pt-BR]"
+  },
+  {
+    "title": "Whatsapp Bot",
+    "links": {
+      "src": "https://github.com/DanSilva41/bot-whatsapp"
+    },
+    "description": "Project to explore WhatsApp features."
+  },
+  {
+    "title": "UNIPH",
+    "links": {
+      "src": "https://github.com/DanSilva41/uniph"
+    },
+    "description": "Project developed in a Java course for the Web with JSF and JPA. The central idea is the creation of a system for universities that contemplates students, teachers, classes, disciplines and their respective schedules."
+  }
+]
