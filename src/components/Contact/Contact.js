@@ -13,7 +13,7 @@ import {
 
 function Contact() {
   const { formData, errors, handleInput, handleSubmit, isFormValid } = useForm();
-  const formId = `${process.env.FORMSPREE_FORM_ID}`;
+  const formId = `${process.env.GATSBY_FORMSPREE_FORM_ID}`;
 
   return (
     <ContactWrapper id="contact">
