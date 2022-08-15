@@ -28,7 +28,6 @@ const website = {
   ...social,
   ...owner,
   disqusShortName: 'danilosilva',
-  googleAnalyticsID: 'G-B7EX2CBDBC',
   // Manifest
   themeColor: '#6D83F2',
   backgroundColor: '#6D83F2',
