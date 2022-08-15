@@ -25,6 +25,13 @@ module.exports = {
     }
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: `${process.env.GATSBY_GOOGLE_ANALYTICS_ID}`,
+        head: true,
+      },
+    },
     // MARKDOWN
     {
       resolve: `gatsby-transformer-remark`,
@@ -143,13 +150,6 @@ module.exports = {
       options: {
         color: `#6D83F2`,
         showSpinner: false,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: `${process.env.GATSBY_GOOGLE_ANALYTICS_ID}`,
-        head: true,
       },
     },
     // others
