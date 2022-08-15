@@ -27,8 +27,8 @@ const website = {
   ...meta,
   ...social,
   ...owner,
-  disqusShortName: 'anuraghazra',
-  googleAnalyticsID: 'UA-119972196-1',
+  disqusShortName: 'danilosilva',
+  googleAnalyticsID: 'G-B7EX2CBDBC',
   // Manifest
   themeColor: '#6D83F2',
   backgroundColor: '#6D83F2',

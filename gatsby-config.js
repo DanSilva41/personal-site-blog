@@ -1,6 +1,10 @@
 const path = require('path');
 const config = require('./config/website');
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: config.siteTitle,
@@ -53,6 +57,8 @@ module.exports = {
             },
           },
           `gatsby-plugin-social-banners`,
+          `gatsby-remark-external-links`,
+          `gatsby-remark-gifs`
         ],
       },
     },

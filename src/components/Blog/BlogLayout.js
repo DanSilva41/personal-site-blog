@@ -7,7 +7,7 @@ import Tags from '@components/Blog/Tags';
 import SplitLayout from '@common/SplitLayout';
 import useRandomBlogPost from '@src/hooks/useRandomBlogPost';
 
-const BlogLayout = ({ children, sharerSection }) => {
+const BlogLayout = ({ children, sharerSection, isBlogPost }) => {
   const { randomSlug, randomTitle } = useRandomBlogPost();
 
   return (
@@ -31,6 +31,7 @@ const BlogLayout = ({ children, sharerSection }) => {
           {sharerSection && sharerSection}
         </>
       }
+      isBlogPost={isBlogPost}
     />
   );
 };

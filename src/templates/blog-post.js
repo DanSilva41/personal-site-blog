@@ -41,21 +41,12 @@ const BlogPost = ({ data, pageContext }) => {
       <BlogLayout
         sharerSection={
           <div>
+            <hr style={{ margin: '10px 0' }} />
             <h4>Share on</h4>
             <SocialShareSection baseSlugUrl={baseSlugUrl} title={title} />
-            <hr style={{ margin: '25px 0' }} />
-            <a
-              style={{ fontSize: '16px' }}
-              aria-label="Edit post on github"
-              rel="noopener norefferer"
-              target="__blank"
-              href={githubLink}
-            >
-              <FontAwesomeIcon style={{ fontSize: 18 }} icon="edit" /> Edit post
-              on GitHub
-            </a>
           </div>
         }
+        isBlogPost
       >
         <BlogDateAndReadTime date={date} readtime={timeToRead} />
         <h1>{title}</h1>
@@ -63,7 +54,6 @@ const BlogPost = ({ data, pageContext }) => {
           className="markdown-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
-        <DiscussionEmbed shortname={disqusShortName} config={disqusConfig} />
       </BlogLayout>
     </Layout>
   );

@@ -11,7 +11,7 @@ const SplitLayoutWrapper = styled.section`
   }
 
   display: grid;
-  grid-template-columns: minmax(750px, 1fr) 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-column-gap: 30px;
   grid-template-areas: 'post side';
 
@@ -28,9 +28,15 @@ const SplitLayoutWrapper = styled.section`
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 30px;
-    grid-template-areas:
-      'side side'
-      'post post';
+    grid-template-areas: ${props => props.isBlogPost ? 
+      `'post post'
+       'side side'
+      `
+    :
+      `'side side'
+       'post post'
+      `
+    };
   }
 
   .sticky__aside {
@@ -39,8 +45,8 @@ const SplitLayoutWrapper = styled.section`
   }
 `;
 
-const SplitLayout = ({ content, aside }) => (
-  <SplitLayoutWrapper>
+const SplitLayout = ({ content, aside, isBlogPost}) => (
+  <SplitLayoutWrapper isBlogPost={isBlogPost}>
     <section className="layout__content">{content && content}</section>
     <section className="layout__aside">
       <aside className="sticky__aside">{aside && aside}</aside>
